@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="max-w-[1042px] mx-auto">
@@ -10,9 +12,7 @@ export default function Home() {
       </div>
     </section>
     <nav className="grid! grid-cols-2! gap-1! mt-2!">
-      <a className="nes-btn">Blog</a>
-      <a className="nes-btn">Projects</a>
-      <a href="/about" className="nes-btn">About</a>
+      <Link href="/about" className="nes-btn">About</Link>
     </nav>
   </main>
   );

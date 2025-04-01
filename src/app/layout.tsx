@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Press_Start_2P } from "next/font/google";
-import {SoundEffect} from "@/components/SoundEffect/SoundEffect";
+import { SoundEffect } from "@/components/SoundEffect/SoundEffect";
 import "./globals.css";
-
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,18 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      className={pressStart2P.className}
-      >
+      <body className={pressStart2P.className}>
         <header>
-        header
+          <SoundEffect />
         </header>
         {children}
-        <footer>
-footer
-        </footer>
+        <Footer />
       </body>
-      <SoundEffect />
     </html>
   );
 }
