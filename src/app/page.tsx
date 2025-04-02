@@ -1,14 +1,10 @@
 import BalloonCard from "@/components/BalloonCard/BalloonCard";
 import { Metadata } from "next";
 import Link from "next/link";
-import pixelProfile from "../../public/pixel_profile.png";
 
 export const metadata: Metadata = {
   title: "Juan González 👾",
   description: "Senior Web Engineer at Kinesso",
-  openGraph: {
-    images: pixelProfile,
-  },
 };
 
 export default function Home() {
