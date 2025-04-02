@@ -1,4 +1,4 @@
-import { Company } from "@/components/AboutCard/AboutCard";
+import { Company } from "@/interfaces";
 
 export const companies: Company[] = [
   {

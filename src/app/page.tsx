@@ -1,5 +1,11 @@
 import BalloonCard from "@/components/BalloonCard/BalloonCard";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Juan González 👾",
+  description: "Senior Web Engineer at Kinesso",
+};
 
 export default function Home() {
   return (
@@ -13,9 +19,10 @@ export default function Home() {
         <Link href="/about" className="nes-btn">
           About
         </Link>
-        {/*   <Link href="/projects" className="nes-btn">
+        <Link href="/projects" className="nes-btn">
           Projects
         </Link>
+        {/*
         <Link href="/blog" className="nes-btn">
           Blog
         </Link> */}

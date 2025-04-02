@@ -1,5 +1,11 @@
 import BalloonCard from "@/components/BalloonCard/BalloonCard";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Juan González | Contact 👾",
+  description: "Senior Web Engineer at Kinesso",
+};
 
 export default function Page() {
   return (

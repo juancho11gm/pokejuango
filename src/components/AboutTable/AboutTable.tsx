@@ -1,5 +1,5 @@
+import { Company } from "@/interfaces";
 import Image from "next/image";
-import { Company } from "../AboutCard/AboutCard";
 
 export default function AboutTable({ companies }: { companies: Company[] }) {
   return companies.map((company) => {

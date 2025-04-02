@@ -1,7 +1,13 @@
 import AboutTable from "@/components/AboutTable/AboutTable";
 import BalloonCard from "@/components/BalloonCard/BalloonCard";
 import { companies } from "@/data/companies";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Juan González | About 👾",
+  description: "Senior Web Engineer at Kinesso",
+};
 
 export default function About() {
   return (
@@ -24,7 +30,12 @@ export default function About() {
       <AboutTable companies={companies} />
 
       <div className="flex justify-center my-16!">
-        <button className="nes-btn">Download my CV</button>
+        <a
+          className="nes-btn"
+          href="https://drive.google.com/file/d/1ehZIpJbJlRl91m2Lx2MJ-EggcCfJ43uW/view?usp=sharing"
+        >
+          Download my CV
+        </a>
       </div>
     </main>
   );
