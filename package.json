@@ -11,6 +11,7 @@
   "dependencies": {
     "nes.css": "^2.3.0",
     "next": "15.2.4",
+    "pixelarticons": "^1.8.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.1.0"

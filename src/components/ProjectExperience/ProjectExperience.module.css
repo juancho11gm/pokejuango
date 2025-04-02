@@ -1,0 +1,38 @@
+.project {
+  position: relative;
+}
+
+/* Line */
+.project::before {
+  content: "";
+  background-color: var(--color-gray-400);
+  position: absolute;
+  left: 1rem;
+  height: calc(100%);
+  top: 2rem;
+  width: 1px;
+}
+
+/* Dot */
+.project .icon {
+  border-radius: 50%;
+  content: "";
+  background-color: var(--color-gray-400);
+  position: absolute;
+  left: 1rem;
+  transform: translateX(-50%);
+  top: 0;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+}
+
+.iconImage {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.project:last-child::before {
+  display: none;
+}
