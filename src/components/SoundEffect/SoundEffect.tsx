@@ -50,7 +50,9 @@ export function SoundEffect() {
       document.removeEventListener("click", playSound);
       audioContextRef.current?.close();
 
-      audioRef.current!.pause();
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
     };
   }, []);
 
