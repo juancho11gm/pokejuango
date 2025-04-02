@@ -1,4 +1,6 @@
-export const companies = [
+import { Company } from "@/components/AboutCard/AboutCard";
+
+export const companies: Company[] = [
   {
     name: "Kinesso",
     type: "Full-time - Remote",

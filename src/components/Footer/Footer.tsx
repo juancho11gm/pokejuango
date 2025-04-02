@@ -1,10 +1,9 @@
 export default function Footer() {
-  const date = new Date();
-  const text = `${date.getFullYear()} Juan Gonzalez - @juancho11gm`;
-
   return (
-    <footer>
-      <p className="text-center">{text}</p>
+    <footer className="text-white!">
+      <p className="text-center">
+        Made with <i className="nes-icon is-small heart"></i> by Juan González
+      </p>
     </footer>
   );
 }

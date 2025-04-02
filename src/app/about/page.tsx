@@ -1,6 +1,6 @@
+import AboutTable from "@/components/AboutTable/AboutTable";
 import BalloonCard from "@/components/BalloonCard/BalloonCard";
 import { companies } from "@/data/companies";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
@@ -21,68 +21,11 @@ export default function About() {
             "
       />
 
-      {companies.map((company) => {
-        return (
-          <section
-            key={company.name}
-            className="nes-container with-title is-dark my-8!"
-          >
-            <a
-              href={company.href}
-              className="inline-flex! items-center! gap-4! text-white! title"
-            >
-              <Image
-                src={company.iconUrl}
-                width={50}
-                height={50}
-                alt={company.name}
-                className="nes-avatar is-medium"
-                style={{
-                  imageRendering: "pixelated",
-                }}
-              />
-              <div className="flex flex-col">
-                <h2 className="m-0!">{company.name}</h2>
-                <time>
-                  {company.startDate} - {company.endDate || "Current"}
-                </time>
-              </div>
-            </a>
-            <div className="nes-table-responsive mt-4">
-              <table className="nes-table is-bordered is-dark before:content-none!">
-                <thead>
-                  <tr>
-                    <th>Role</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {company.projects.map((project) => {
-                    return (
-                      <tr key={project.name}>
-                        <td>{project.role}</td>
-                        <td>
-                          <p> {project.description}</p>
+      <AboutTable companies={companies} />
 
-                          <ul className="flex! flex-wrap! gap-3!">
-                            {project.tags.map((tag) => (
-                              <li key={tag} className="nes-badge w-auto!">
-                                <span className="is-primary w-auto! static!">
-                                  {tag}
-                                </span>
-                              </li>
-                            ))}
-                          </ul>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        );
-      })}
+      <div className="flex justify-center my-16!">
+        <button className="nes-btn">Download my CV</button>
+      </div>
     </main>
   );
 }
