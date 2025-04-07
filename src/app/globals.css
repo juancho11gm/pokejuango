@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @apply text-white! px-12;
+  @apply text-white! px-2 md:px-12;
 }
 
 p,
