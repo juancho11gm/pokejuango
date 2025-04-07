@@ -15,7 +15,11 @@ body {
 main {
   max-width: 1042px;
   margin: 0 auto;
-  padding: 2rem;
   gap: 2rem;
   justify-self: center;
+}
+
+.nes-container,
+.nes-balloon {
+  @apply p-1! sm:p-4!;
 }

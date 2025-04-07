@@ -18,27 +18,29 @@ export default function Projects() {
 
       <BalloonCard title="Projects" dialog=" Checkout my projects below." />
 
-      {projects.map((project) => (
-        <section
-          className="nes-container is-dark my-8! flex! gap-4!"
-          key={project.title}
-        >
-          <Image
-            className="shrink-0 h-[100px] w-[100px]"
-            src="/package.png"
-            alt="package"
-            width={50}
-            height={25}
-          />
-          <div>
-            <h2 className="text-[#77279d]">{project.title}</h2>
-            <p>{project.description}</p>
-            <Link href={project.url} className="nes-btn">
-              View Project
-            </Link>
-          </div>
-        </section>
-      ))}
+      <div className="grid! grid-cols-1! gap-4! mt-4! sm:grid-cols-2!">
+        {projects.map((project) => (
+          <section
+            className="nes-container is-dark flex! gap-2!"
+            key={project.title}
+          >
+            <Image
+              className="shrink-0 h-[100px] w-[100px]"
+              src="/package.png"
+              alt="package"
+              width={50}
+              height={25}
+            />
+            <div>
+              <h2 className="text-[#77279d]">{project.title}</h2>
+              <p>{project.description}</p>
+              <Link href={project.url} className="nes-btn">
+                View Project
+              </Link>
+            </div>
+          </section>
+        ))}
+      </div>
     </main>
   );
 }

@@ -37,7 +37,7 @@ export default function Page() {
               >
                 <i className="nes-icon linkedin is-large"></i>
 
-                <span>/in/juansebastiangonzalezm</span>
+                <span>Juan González</span>
               </Link>
             </li>
           </ul>
