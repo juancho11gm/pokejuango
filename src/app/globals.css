@@ -3,6 +3,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #000;
 }
 
 body {
@@ -24,6 +25,12 @@ ul {
 
 a {
   @apply text-[#ab52d4] hover:text-[#bb6be0d7] hover:underline transition-colors;
+}
+
+/* NES */
+
+.nes-container {
+  @apply px-2 md:px-8;
 }
 
 /* Markdown */
