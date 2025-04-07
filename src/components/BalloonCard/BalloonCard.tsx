@@ -5,7 +5,7 @@ export default function BalloonCard({
   children,
   title,
 }: {
-  dialog: string;
+  dialog: React.ReactNode;
   children?: React.ReactNode;
   title?: string;
 }) {
@@ -13,12 +13,7 @@ export default function BalloonCard({
     <section className="nes-container is-rounded is-dark with-title">
       <h1 className="title">{title}</h1>
       <section className="flex! flex-col gap-4 my-6! items-center! sm:flex-row">
-        <div
-          className="nes-balloon from-left is-dark sm:order-1"
-          dangerouslySetInnerHTML={{
-            __html: dialog,
-          }}
-        />
+        <div className="nes-balloon from-left is-dark sm:order-1">{dialog}</div>
         <span className="flex! flex-col! items-center!">
           <Image
             src="/pixel_profile.png"

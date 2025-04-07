@@ -13,8 +13,18 @@ export default function Home() {
       <main className="max-w-[1042px] mx-auto">
         <BalloonCard
           title="Home"
-          dialog="Hello! Welcome to my website. <br> <br> I'm Juan González, Senior Web Engineer at Kinesso. <br> <br> Feel free to navigate through the links."
-        ></BalloonCard>
+          dialog={
+            <p>
+              Hello! Welcome to my website.
+              <br />
+              <br />
+              I am Juan González, Senior Web Engineer at Kinesso.
+              <br />
+              <br />
+              Feel free to navigate through the links.
+            </p>
+          }
+        />
 
         <nav className="grid! grid-cols-2! gap-1! mt-8!">
           <Link href="/about" className="nes-btn">
@@ -23,10 +33,9 @@ export default function Home() {
           <Link href="/projects" className="nes-btn">
             Projects
           </Link>
-          {/*
-        <Link href="/blog" className="nes-btn">
-          Blog
-        </Link> */}
+          <Link href="/blog" className="nes-btn">
+            Blog
+          </Link>
           <Link href="/contact" className="nes-btn">
             Contact
           </Link>

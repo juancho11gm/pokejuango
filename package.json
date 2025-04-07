@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "nes.css": "^2.3.0",
     "next": "15.2.4",
     "pixelarticons": "^1.8.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "rehype-highlight": "^7.0.2",
+    "slug": "^10.0.0",
     "tailwind-merge": "^3.1.0"
   },
   "devDependencies": {
@@ -22,6 +26,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/slug": "^5.0.9",
     "eslint": "^9.23.0",
     "eslint-config-next": "15.2.4",
     "eslint-config-prettier": "^10.1.1",

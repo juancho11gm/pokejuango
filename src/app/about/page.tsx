@@ -2,7 +2,6 @@ import AboutTable from "@/components/AboutTable/AboutTable";
 import BalloonCard from "@/components/BalloonCard/BalloonCard";
 import { companies } from "@/data/companies";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Juan González | About 👾",
@@ -12,10 +11,6 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <main>
-      <Link className="nes-btn mb-10!" href="/">
-        Go Back
-      </Link>
-
       <BalloonCard
         title="About"
         dialog="

@@ -1,4 +1,3 @@
-import BalloonCard from "@/components/BalloonCard/BalloonCard";
 import { projects } from "@/data/projects";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -12,11 +11,7 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <main>
-      <Link className="nes-btn mb-10!" href="/">
-        Go Back
-      </Link>
-
-      <BalloonCard title="Projects" dialog=" Checkout my projects below." />
+      <h1 className="text-4xl font-bold mb-8 text-white">Projects</h1>
 
       <div className="grid! grid-cols-1! gap-4! mt-4! sm:grid-cols-2!">
         {projects.map((project) => (

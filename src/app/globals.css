@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "nes.css/css/nes.min.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("/background.png");
   background-size: cover;
@@ -10,16 +14,99 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @apply text-white!;
+}
+
+h1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+p {
+  @apply text-sm;
+}
+
+a {
+  @apply text-[#ab52d4] hover:text-[#bb6be0d7] hover:underline transition-colors;
+}
+
+main,
+header {
+  max-width: 1042px;
+  margin: 0 auto;
 }
 
 main {
-  max-width: 1042px;
-  margin: 0 auto;
   gap: 2rem;
   justify-self: center;
 }
 
-.nes-container,
-.nes-balloon {
-  @apply p-1! sm:p-4!;
+/* Markdown */
+
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-4;
+}
+
+.markdown h2 {
+  @apply text-3xl mt-12 mb-4 leading-snug;
+}
+
+.markdown h3 {
+  @apply text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown ul {
+  @apply list-disc pl-4;
+}
+
+.markdown ol {
+  @apply list-decimal pl-4;
+}
+
+.markdown img {
+  @apply rounded-md m-auto max-w-xs md:max-w-xl;
+}
+
+.markdown :not(h1, h2, h3, h4, h5, h6) a {
+  @apply text-purple-500 underline hover:underline;
+}
+
+.markdown :is(h1, h2, h3, h4, h5, h6) a {
+  @apply hover:underline relative;
+}
+
+.markdown :is(h1, h2, h3, h4, h5, h6) a::before {
+  @apply hidden lg:block;
+  content: "🔗";
+  position: absolute;
+  opacity: 0;
+  left: -2.2rem;
+}
+
+.markdown :is(h1, h2, h3, h4, h5, h6) a:hover::before {
+  opacity: 1;
+}
+
+.markdown table {
+  @apply m-auto;
+}
+
+.markdown em {
+  @apply my-2 text-center block;
+}
+
+.markdown th,
+.markdown td {
+  @apply border p-2 text-center;
+}
+
+.markdown code {
+  font-size: 0.8rem;
+  overflow-x: scroll;
 }

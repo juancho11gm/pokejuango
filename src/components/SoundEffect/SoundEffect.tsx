@@ -57,12 +57,12 @@ export function SoundEffect() {
   }, []);
 
   return (
-    <div className="p-4 flex justify-end">
+    <>
       <audio
         ref={audioRef}
         src="/background-song.mp3"
         loop={true}
-        autoPlay={true}
+        autoPlay={false}
         muted={false}
       />
       <button onClick={handlePlayPause} id="mute-toggle" className="nes-btn">
@@ -92,6 +92,6 @@ export function SoundEffect() {
           </svg>
         )}
       </button>
-    </div>
+    </>
   );
 }
