@@ -49,10 +49,6 @@ export function SoundEffect() {
     return () => {
       document.removeEventListener("click", playSound);
       audioContextRef.current?.close();
-
-      if (audioRef.current) {
-        audioRef.current.pause();
-      }
     };
   }, []);
 

@@ -48,6 +48,7 @@ export function getPostBySlug(slug: string): Post | null {
       excerpt: data.excerpt,
     };
   } catch (error) {
+    console.error(error);
     return null;
   }
 }
