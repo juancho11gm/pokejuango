@@ -13,13 +13,15 @@ export default function About() {
     <main>
       <BalloonCard
         title="About"
-        dialog="
-              I’m a passionate Software Developer with over 6 years of
-              experience using Web Development technologies.  <br> <br>
-              My passion for reading and learning about AI, programming, and
-              personal growth keeps me up-to-date with industry trends and fuels
-              my drive to innovate and excel.
-            "
+        dialog={
+          <p>
+            I’m a passionate Software Developer with over 6 years of experience
+            using Web Development technologies. <br /> <br />
+            My passion for reading and learning about AI, programming, and
+            personal growth keeps me up-to-date with industry trends and fuels
+            my drive to innovate and excel.
+          </p>
+        }
       />
 
       <AboutTable companies={companies} />

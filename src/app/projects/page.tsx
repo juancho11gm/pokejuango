@@ -16,23 +16,28 @@ export default function Projects() {
       <div className="grid! grid-cols-1! gap-4! mt-4! sm:grid-cols-2!">
         {projects.map((project) => (
           <section
-            className="nes-container is-dark flex! gap-2!"
+            className="nes-container is-dark flex! !flex-col gap-2!"
             key={project.title}
           >
-            <Image
-              className="shrink-0 h-[100px] w-[100px]"
-              src="/package.png"
-              alt="package"
-              width={50}
-              height={25}
-            />
-            <div>
-              <h2 className="text-[#77279d]">{project.title}</h2>
-              <p>{project.description}</p>
-              <Link href={project.url} className="nes-btn">
-                View Project
-              </Link>
+            <div className="flex! gap-2!">
+              <Image
+                className="shrink-0 h-[100px] w-[100px]"
+                src="/package.png"
+                alt="package"
+                width={50}
+                height={25}
+              />
+              <div>
+                <h2 className="text-[#77279d]">{project.title}</h2>
+                <p>{project.description}</p>
+              </div>
             </div>
+            <Link
+              href={project.url}
+              className="nes-btn w-full! shrink-0! sm:max-w-[300px]"
+            >
+              View Project
+            </Link>
           </section>
         ))}
       </div>

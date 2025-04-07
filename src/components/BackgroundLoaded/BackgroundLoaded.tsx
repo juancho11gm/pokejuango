@@ -35,7 +35,7 @@ export default function BackgroundLoaded({
 
   if (!bgLoaded) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-black text-white text-2xl ">
+      <div className="min-h-screen flex items-center justify-center  text-white text-2xl">
         <div className="max-w-[1042px] mx-auto flex flex-col gap-8">
           <progress className="nes-progress" value={progress} max="100" />
           <p>Loading...</p>

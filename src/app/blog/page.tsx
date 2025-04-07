@@ -11,7 +11,7 @@ export default function BlogIndex() {
         {posts.map((post) => (
           <article key={post.slug} className="border-b border-gray-700 pb-8">
             <Link href={`/blog/${post.slug}`}>
-              <h2 className="text-2xl font-semibold text-[#77279d]">
+              <h2 className="text-2xl font-semibold text-[#ae46de]">
                 {post.title}
               </h2>
             </Link>

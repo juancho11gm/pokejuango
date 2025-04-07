@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main>
+    <main className="mx-auto">
       <BalloonCard title="Contact" dialog="Let's connect!" />
       <section className="nes-container is-rounded is-dark with-title is-centered">
         <p className="title">Social Media</p>

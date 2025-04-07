@@ -14,30 +14,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @apply text-white!;
+  @apply text-white! px-12;
 }
 
-h1 {
-  @apply text-4xl font-bold mb-4;
-}
-
-p {
+p,
+ul {
   @apply text-sm;
 }
 
 a {
   @apply text-[#ab52d4] hover:text-[#bb6be0d7] hover:underline transition-colors;
-}
-
-main,
-header {
-  max-width: 1042px;
-  margin: 0 auto;
-}
-
-main {
-  gap: 2rem;
-  justify-self: center;
 }
 
 /* Markdown */
@@ -53,12 +39,16 @@ main {
   @apply my-4;
 }
 
+h1 {
+  @apply text-3xl leading-snug;
+}
+
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-2xl mt-12 mb-4 leading-snug;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-[1.25rem] mt-8 mb-4 leading-snug;
 }
 
 .markdown ul {
