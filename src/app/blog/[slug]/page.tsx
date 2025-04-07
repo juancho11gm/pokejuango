@@ -1,9 +1,23 @@
 import { getPostBySlug } from "@/utils/markdown";
 import "highlight.js/styles/github-dark.css";
 import { Code } from "@/components/Code/Code";
+import { Metadata } from "next";
 
 interface BlogPostProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({
+  params,
+}: BlogPostProps): Promise<Metadata> {
+  const slug = (await params).slug;
+  const post = getPostBySlug(slug);
+
+  return {
+    title: `Juan González | ${post?.title} 👾`,
+    description: "Senior Web Engineer at Kinesso",
+    metadataBase: new URL("https://juangodev.netlify.app/"),
+  };
 }
 
 export default async function BlogPost({ params }: BlogPostProps) {

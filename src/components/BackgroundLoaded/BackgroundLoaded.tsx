@@ -15,17 +15,14 @@ export default function BackgroundLoaded({
     img.src = "/background.png";
 
     // Fake progress bar (0 → 90%)
-    const interval = setInterval(() => {
+    setInterval(() => {
       setProgress((prev) => {
-        if (prev < 90) return prev + 1;
+        if (prev < 90) return prev + 10;
         return prev;
       });
-    }, 20);
+    }, 100);
 
     img.onload = () => {
-      clearInterval(interval);
-      setProgress(100);
-
       // small delay to allow UI to finish animation
       setTimeout(() => {
         setBgLoaded(true);

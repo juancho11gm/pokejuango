@@ -6,6 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Juan González | About 👾",
   description: "Senior Web Engineer at Kinesso",
+  metadataBase: new URL("https://juangodev.netlify.app/"),
 };
 
 export default function About() {

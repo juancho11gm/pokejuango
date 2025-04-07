@@ -5,6 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Juan González | Contact 👾",
   description: "Senior Web Engineer at Kinesso",
+  metadataBase: new URL("https://juangodev.netlify.app/"),
 };
 
 export default function Page() {

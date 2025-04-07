@@ -1,5 +1,12 @@
 import { getAllPosts } from "@/utils/markdown";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Juan González | Blog 👾",
+  description: "Senior Web Engineer at Kinesso",
+  metadataBase: new URL("https://juangodev.netlify.app/"),
+};
 
 export default function BlogIndex() {
   const posts = getAllPosts();
