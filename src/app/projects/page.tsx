@@ -13,10 +13,10 @@ export default function Projects() {
     <main>
       <h1 className="text-4xl font-bold mb-8 text-white">Projects</h1>
 
-      <div className="grid! grid-cols-1! gap-4! mt-4! sm:grid-cols-2!">
+      <div className="grid! grid-cols-1! gap-4! mt-4! md:grid-cols-2!">
         {projects.map((project) => (
           <section
-            className="nes-container is-dark flex! !flex-col gap-2!"
+            className="nes-container is-dark flex! justify-between! !flex-col"
             key={project.title}
           >
             <div className="flex! gap-2!">
@@ -32,9 +32,25 @@ export default function Projects() {
                 <p>{project.description}</p>
               </div>
             </div>
+            <ul className="flex! flex-wrap! gap-3!">
+              {project.tags?.map((tag) => (
+                <li key={tag} className="nes-badge w-auto!">
+                  <span
+                    className="is-primary w-auto! static!"
+                    style={{
+                      backgroundColor: "#77279d",
+                      boxShadow:
+                        "0 .5em #77279d, 0 -.5em #77279d, .5em 0 #77279d, -.5em 0 #77279d",
+                    }}
+                  >
+                    {tag}
+                  </span>
+                </li>
+              ))}
+            </ul>
             <Link
               href={project.url}
-              className="nes-btn w-full! shrink-0! sm:max-w-[300px]"
+              className="nes-btn w-full! shrink-0! sm:max-w-[300px] mx-auto!"
             >
               View Project
             </Link>

@@ -1,115 +1,133 @@
 export const projects = [
   {
     title: "juango.dev",
-    description: "The website you are using was created with NextJS.",
+    description: "My portfolio website.",
     url: "https://github.com/juancho11gm/juancho11gm.github.io",
+    tags: ["NextJS", "TailwindCSS", "TypeScript", "React", "NesCSS"],
   },
   {
     title: "pushdev",
-    description: "Web development bootcamps for beginners.",
+    description: "Online Bootcamps for web developers.",
     url: "https://github.com/pushdev-code",
+    tags: ["HTML", "CSS", "JavaScript", "React", "NodeJS", "Express"],
   },
   {
     title: "Worki",
-    description:
-      "Web and mobile app for finding job opportunities (Flutter + SpringBoot).",
+    description: "Web and Mobile app for finding job opportunities.",
     url: "https://github.com/juancho11gm/worki",
+    tags: ["Flutter", "SpringBoot", "Dart", "AWS Rekognition", "Google Maps"],
   },
   {
     title: "Movies App",
-    description: "Check the current movies with this app created with Flutter.",
+    description: "Flutter app to check popular movies.",
     url: "https://github.com/juancho11gm/flutter-projects/tree/master/flutter_vscode",
+    tags: ["Flutter", "Dart", "REST API"],
   },
-  {
-    title: "Same Game robot automation",
-    description: "This Robot solves the Same Game boards.",
-    url: "https://github.com/juancho11gm/same-game",
-  },
+
   {
     title: "Deploy your first website",
-    description:
-      "Deploy your first website with Firebase. We are going to use Firebase, Travis, Nodejs and GoDaddy like tech tool.",
+    description: "Tutorial to deploy your first website with Firebase.",
     url: "https://github.com/juancho11gm/deploy-website",
+    tags: ["Firebase", "Travis", "NodeJS", "GoDaddy"],
   },
   {
-    title: "JavaScript Design Patterns",
+    title: "Design Patterns",
     description: "JavaScript Design Patterns implementations.",
     url: "https://github.com/juancho11gm/design-patterns-js",
+    tags: ["JavaScript", "Design Patterns"],
   },
   {
     title: "Trello",
-    description: "Trello Clone created with React and TypeScript.",
+    description: "Trello clone using Drag and Drop.",
     url: "https://github.com/juancho11gm/Trello",
+    tags: ["React", "TypeScript", "TailwindCSS", "React DND"],
   },
   {
     title: "Star+",
     description: "Star+ website clone with NextJS.",
     url: "https://github.com/juancho11gm/star-plus",
+    tags: ["NextJS", "TypeScript", "CSS Modules", "Firebase"],
   },
   {
     title: "AdventJS",
     description: "AdventJS Solutions (2021 and 2022).",
     url: "https://github.com/juancho11gm/adventjs",
+    tags: ["TypeScript"],
   },
   {
     title: "Naval Battle",
-    description: "Naval Battle arcade game development with C++.",
+    description: "Naval Battle arcade game development.",
     url: "https://github.com/juancho11gm/basic-algorithms",
+    tags: ["C++"],
   },
   {
     title: "JaveCoin",
     description:
-      "Banking portal where the clients manage a virtual currency called JaveCoin. The project was developed using PHP and MySQL.",
+      "Banking portal where the clients manage a virtual currency called JaveCoin.",
     url: "https://github.com/juancho11gm/php-project",
+    tags: ["PHP", "MySQL"],
   },
   {
     title: "Distributed Systems",
     description:
-      "File management, concurrency control, transactional management and recovery from failures by using Java.",
+      "File management, concurrency control, transactional management and recovery from failures.",
     url: "https://github.com/juancho11gm/distributed-systems-II",
+    tags: ["Java"],
   },
   {
     title: "Operating Systems",
-    description: "Minishell development with C.",
+    description: "Minishell development.",
     url: "https://github.com/juancho11gm/operating-systems",
+    tags: ["C"],
   },
   {
     title: "Space X Launches",
-    description:
-      "Use NextJS and GraphQL for fetching and rendering the latests Space X launches.",
+    description: "Retrieve the latests Space X launches.",
     url: "https://github.com/juancho11gm/spacex-launches",
+    tags: ["NextJS", "GraphQL"],
   },
   {
     title: "Pokedex",
-    description: "Fetch Pokemon data through React Redux and React Router.",
+    description: "Pokemon app with React features.",
     url: "https://github.com/juancho11gm/pokedux",
+    tags: ["React", "Redux", "React Router"],
   },
   {
-    title: "Game Development with Assembly",
-    description: "Concentration Game developed with Assembly.",
+    title: "Game Development with Assembler",
+    description: "Concentration Game developed .",
     url: "https://github.com/juancho11gm/assembly-project",
+    tags: ["Assembly", "C"],
   },
   {
-    title: "Moramia",
-    description:
-      "Project carried out with PushDev and its students. The goal was to build a website with a shopping cart using JavaScript, HTML, SCSS, NodeJS, MongoDB, and Google Cloud.",
+    title: "Moramia Shopping Cart",
+    description: "Project carried out with PushDev and its students.",
     url: "https://github.com/pushdev-code/moramia-website",
+    tags: ["JavaScript", "HTML", "SCSS", "NodeJS", "MongoDB", "Google Cloud"],
   },
   {
-    title: "Web Services",
+    title: "ECCO Web Services",
     description:
-      "Project carried out in the Web Services subject. It was developed using SOAP and REST for the publication of hotels, transportation, and food services. The backend was developed with Django and Frontend with Angular.",
+      "Project carried out to publish of hotels, transportation, and food services.",
     url: "https://github.com/juancho11gm/ecco-web-services",
+    tags: ["SpringBoot", "Angular", "SOAP", "REST"],
   },
   {
     title: "Get Domain data",
-    description: "Get domain metadata through a Vue frontend and a GO backend.",
+    description: "Retrieve metadata using an URL.",
     url: "https://github.com/juancho11gm/go-challenge",
+    tags: ["Vue", "GO"],
   },
   {
     title: "Healthy Routine",
     description:
-      "The application is focused on the publication of healthy diets and routines. It was developed using the SCRUM methodology. The tech tools were Ionic and Firebase.",
+      "The application is focused on the publication of healthy diets and routines.",
     url: "https://github.com/juancho11gm/healthy-routine",
+    tags: ["Ionic", "Firebase"],
+  },
+  {
+    title: "Same Game robot automation",
+    description: "This Robot solves the Same Game boards.",
+    url: "https://github.com/juancho11gm/same-game",
+    tags: ["Java"],
   },
 ];
