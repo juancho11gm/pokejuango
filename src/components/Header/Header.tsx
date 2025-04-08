@@ -45,7 +45,7 @@ export default function Header() {
       {!isHeaderVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed! bottom-8! right-8! nes-btn"
+          className="fixed! bottom-8! right-8! nes-btn z-10!"
           aria-label="Go to top"
         >
           ↑
