@@ -8,6 +8,7 @@ export default function BackgroundLoaded({
   children: ReactNode;
 }) {
   const [bgLoaded, setBgLoaded] = useState(false);
+  const [profileLoaded, setProfileLoaded] = useState(false);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -24,18 +25,25 @@ export default function BackgroundLoaded({
       });
     }, 100);
 
-    const handleLoad = () => {
+    const handleLoadBg = () => {
       // small delay to allow UI to finish animation
       setTimeout(() => {
         setBgLoaded(true);
       }, 300);
     };
 
-    background.onload = handleLoad;
-    profile.onload = handleLoad;
+    const handleLoadProfile = () => {
+      // small delay to allow UI to finish animation
+      setTimeout(() => {
+        setBgLoaded(true);
+      }, 300);
+    };
+
+    background.onload = handleLoadBg;
+    profile.onload = handleLoadProfile;
   }, []);
 
-  if (!bgLoaded) {
+  if (!bgLoaded || !profileLoaded) {
     return (
       <div className="min-h-screen flex items-center justify-center  text-white text-2xl">
         <div className="max-w-[1042px] mx-auto flex flex-col gap-8">
