@@ -15,11 +15,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @apply text-white! px-2 md:px-12;
+  @apply text-white! px-4 md:px-12;
 }
 
 p,
-ul {
+ul,
+li {
   @apply text-sm;
 }
 
@@ -59,11 +60,11 @@ h1 {
 }
 
 .markdown ul {
-  @apply list-disc pl-4;
+  @apply list-disc pl-8;
 }
 
 .markdown ol {
-  @apply list-decimal pl-4;
+  @apply list-decimal pl-8;
 }
 
 .markdown img {

@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { SoundEffect } from "../SoundEffect/SoundEffect";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
 
   const isHome = pathname === "/";
   return (
@@ -13,9 +13,9 @@ export default function Header() {
       {isHome ? (
         <span />
       ) : (
-        <Link className="nes-btn" href="/">
+        <button className="nes-btn" onClick={() => router.back()}>
           Go Back
-        </Link>
+        </button>
       )}
 
       <SoundEffect />

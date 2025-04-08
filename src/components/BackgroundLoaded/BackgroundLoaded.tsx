@@ -11,8 +11,10 @@ export default function BackgroundLoaded({
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const img = new Image();
-    img.src = "/background.png";
+    const background = new Image();
+    const profile = new Image();
+    background.src = "/background.png";
+    profile.src = "/pixel_profile.png";
 
     // Fake progress bar (0 → 90%)
     setInterval(() => {
@@ -22,12 +24,15 @@ export default function BackgroundLoaded({
       });
     }, 100);
 
-    img.onload = () => {
+    const handleLoad = () => {
       // small delay to allow UI to finish animation
       setTimeout(() => {
         setBgLoaded(true);
       }, 300);
     };
+
+    background.onload = handleLoad;
+    profile.onload = handleLoad;
   }, []);
 
   if (!bgLoaded) {

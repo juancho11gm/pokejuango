@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
+import remarkGfm from "remark-gfm";
 import { HeadingAnchor } from "../HeadingAnchor/HeadingAnchor";
 
 export function Code({ content }: { content: string }) {
@@ -7,6 +8,7 @@ export function Code({ content }: { content: string }) {
     <div className="markdown">
       <ReactMarkdown
         rehypePlugins={[rehypeHighlight]}
+        remarkPlugins={[remarkGfm]}
         components={{
           code({ children, ...props }) {
             return (
